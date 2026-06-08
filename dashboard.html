@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>디자인</title>
+  <style>
+    :root {
+      font-family: "Malgun Gothic", "Segoe UI", system-ui, sans-serif;
+      color: #172018;
+      background: #f6f7f4;
+      --ink: #172018;
+      --muted: #667064;
+      --line: #d8ddd3;
+      --panel: #ffffff;
+      --accent: #2f6f5e;
+      --accent2: #b64b3a;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    header {
+      padding: 28px 24px 18px;
+      border-bottom: 1px solid var(--line);
+      background: #fff;
+    }
+    main {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 24px;
+      display: grid;
+      gap: 18px;
+    }
+    h1 { margin: 0; font-size: 32px; letter-spacing: 0; }
+    h2 { margin: 0 0 10px; font-size: 18px; }
+    p { margin: 0; color: var(--muted); line-height: 1.6; }
+    a { color: var(--accent); font-weight: 800; text-decoration: none; }
+    .top {
+      max-width: 1120px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      align-items: end;
+    }
+    .stamp { color: var(--muted); font-size: 13px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+    }
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 16px;
+      min-height: 132px;
+    }
+    .metric {
+      font-size: 34px;
+      line-height: 1;
+      font-weight: 900;
+      color: var(--ink);
+      margin-bottom: 8px;
+    }
+    .list {
+      display: grid;
+      gap: 10px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .list li {
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      gap: 14px;
+      padding: 12px 0;
+      border-top: 1px solid var(--line);
+    }
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      width: fit-content;
+      min-height: 24px;
+      padding: 2px 8px;
+      border-radius: 999px;
+      background: #e6eee8;
+      color: #1f594b;
+      font-size: 12px;
+      font-weight: 900;
+    }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .actions a {
+      display: inline-flex;
+      align-items: center;
+      min-height: 36px;
+      padding: 0 12px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: #fff;
+      color: var(--ink);
+    }
+    code {
+      padding: 2px 5px;
+      border-radius: 4px;
+      background: #eef1ea;
+      color: #111;
+    }
+    footer {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 24px 28px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+    @media (max-width: 760px) {
+      .top { display: grid; align-items: start; }
+      .grid { grid-template-columns: 1fr; }
+      .list li { grid-template-columns: 1fr; gap: 6px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="top">
+      <div>
+        <h1>디자인</h1>
+        <p>PPT, HTML dashboard, prompt, skill, font, visual reference hub.</p>
+      </div>
+      <div class="stamp">Updated 2026-06-08</div>
+    </div>
+  </header>
+  <main>
+    <section class="grid" aria-label="summary">
+      <article class="card">
+        <div class="metric">6</div>
+        <h2>주요 묶음</h2>
+        <p>PPT 템플릿, CCLR/MPL 작업물, HTML 대시보드, Codex 스킬, 폰트, 프롬프트.</p>
+      </article>
+      <article class="card">
+        <div class="metric">2</div>
+        <h2>폰트 원본</h2>
+        <p>영상의학과 발표 폴더의 OTF/TTF 서체를 Git에 포함.</p>
+      </article>
+      <article class="card">
+        <div class="metric">1</div>
+        <h2>동기화 규칙</h2>
+        <p>작업 시작 전 pull, 끝날 때 commit/push. PC와 노트북 동일 폴더명.</p>
+      </article>
+    </section>
+
+    <section class="card">
+      <h2>바로 열기</h2>
+      <div class="actions">
+        <a href="README.md">README</a>
+        <a href="inventory/design-sources.md">소스 인벤토리</a>
+        <a href="prompts/design-prompts.md">디자인 프롬프트</a>
+        <a href="docs/design-system.md">디자인 기준</a>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>수집된 핵심</h2>
+      <ul class="list">
+        <li><span class="tag">PPT</span><p>영상의학과 CCLR/MPL 발표 템플릿, preview deck, 최종 발표 PPT 후보.</p></li>
+        <li><span class="tag">HTML</span><p>Dashboard Hub, Crypto Gap, Money Flow, Dongpa Quant, Swing Lab, Strategy Forge 정적 대시보드.</p></li>
+        <li><span class="tag">Skill</span><p>문서/PDF/PPT/스프레드시트/브라우저/업무 시작-끝 스킬 경로 정리.</p></li>
+        <li><span class="tag">Font</span><p>에이투지체 Medium, 한국기계연구원 Bold.</p></li>
+        <li><span class="tag">Prompt</span><p>PPT, HTML dashboard, visual QA, asset inventory용 프롬프트 초안.</p></li>
+      </ul>
+    </section>
+  </main>
+  <footer>Cloud-static target: /dashboard-pages/design/current/dashboard.html</footer>
+</body>
+</html>
+
