@@ -2,6 +2,8 @@
 
 Generated: 2026-06-08
 
+GitHub: https://github.com/mongdin22/design
+
 ## Copied Into This Repo
 
 - `assets/fonts/에이투지체-5Medium.otf` from `수의학/로테이션/영상의학과/CCLR&MPL 발표 관련/서체/에이투지체-5Medium.otf`
@@ -51,4 +53,3 @@ Generated: 2026-06-08
 
 - Full clinical PDFs, full photo dumps, rendered temp PNG pages, `node_modules`, `.venv`, caches.
 - Reason: Git stays usable across PC/notebook. Copy only when asset becomes a live design source.
-

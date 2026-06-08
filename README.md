@@ -2,6 +2,8 @@
 
 PPT, HTML dashboard, prompt, skill, font, visual reference hub.
 
+GitHub: https://github.com/mongdin22/design
+
 ## Use
 
 - Main dashboard: `dashboard.html`
@@ -27,4 +29,3 @@ git push
 ```
 
 Large PPT/PDF/photo files stay referenced by path unless they are intentional design source assets.
-
